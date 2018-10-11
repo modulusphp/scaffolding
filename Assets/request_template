@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Http\Requests{namespace};
+
+use Modulus\Http\Request;
+
+class {name} extends Request
+{
+  /**
+   * $rules
+   *
+   * @var array
+   */
+  public $rules = [
+    //
+  ];
+}

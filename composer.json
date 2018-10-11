@@ -1,7 +1,7 @@
 {
   "name": "modulusphp/scaffolding",
   "description": "Scaffolding for modulusPHP",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "license": "MIT",
   "type": "package",
   "authors": [
@@ -11,7 +11,7 @@
     }
   ],
   "suggest": {
-    "modulusphp/console": "Required if you want to generate scaffolding using the cli (^1.9.3)."
+    "modulusphp/console": "Required if you want to generate scaffolding using the cli (^1.9.4)."
   },
   "autoload": {
     "psr-4": {
