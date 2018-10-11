@@ -1,0 +1,21 @@
+<?php
+
+use Faker\Generator;
+use MOdulus\Utility\Seeder;
+use Illuminate\Database\Capsule\Manager as DB;
+
+class {name} extends Seeder
+{
+  /**
+   * Run seeder
+   *
+   * @param Generator $faker
+   * @return void
+   */
+  protected function seed(Generator $faker)
+  {
+    DB::table('{table_name}')->insert([
+      //
+    ]);
+  }
+}
