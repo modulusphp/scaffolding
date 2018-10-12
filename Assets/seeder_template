@@ -1,7 +1,7 @@
 <?php
 
 use Faker\Generator;
-use MOdulus\Utility\Seeder;
+use Modulus\Utility\Seeder;
 use Illuminate\Database\Capsule\Manager as DB;
 
 class {name} extends Seeder
