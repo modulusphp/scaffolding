@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Directives{namespace};
+
+use AtlantisPHP\Medusa\Directive;
+
+class {directive_name} extends Directive
+{
+	/**
+	 * Directive name
+	 *
+	 * @var $name
+	 */
+	protected $name = '{directive_name__lower}';
+
+	/**
+	 * Handle directive
+	 *
+	 * @return string
+	 */
+	public function message()
+	{
+		return "Hello World!";
+	}
+}
