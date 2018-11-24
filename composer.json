@@ -11,7 +11,7 @@
     }
   ],
   "suggest": {
-    "modulusphp/console": "Required if you want to generate scaffolding using the cli (^1.9.6)."
+    "modulusphp/console": "Required if you want to generate scaffolding using the cli (^1.9.7)."
   },
   "autoload": {
     "psr-4": {
