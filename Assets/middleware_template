@@ -5,9 +5,10 @@ namespace App\Http\Middleware{namespace};
 class {middleware_name}
 {
   /**
-   * Handle middleware
+   * Handle an incoming request.
    *
-   * @param \Modulus\Http\Request $request
+   * @param  \Modulus\Http\Request $request
+   * @param  bool $continue
    * @return bool $continue
    */
   public function handle($request, $continue) : bool
