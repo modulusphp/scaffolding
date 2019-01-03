@@ -7,11 +7,14 @@ use Modulus\Http\Request;
 class {name} extends Request
 {
   /**
-   * $rules
+   * Request rules
    *
-   * @var array
+   * @return array
    */
-  public $rules = [
-    //
-  ];
+  public function rules() : array
+  {
+    return [
+      //
+    ];
+  }
 }
