@@ -1,12 +1,19 @@
 require('./bootstrap');
 
-// Dependencies
+/**
+ * Vue Dependencies
+ */
 import VueRouter from 'vue-router';
 import routes from './routes.js';
 
-// Components
-Vue.component('example-component', require('./components/example.vue'));
+/**
+ * Vue components
+ */
+Vue.component('example-component', require('./components/example.vue').default);
 
+/**
+ * Configure Vue router
+ */
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -14,6 +21,9 @@ const router = new VueRouter({
   routes: routes
 });
 
+/**
+ * Boot Vue
+ */
 const app = new Vue({
   router,
   el: '#app'
