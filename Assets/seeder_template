@@ -2,7 +2,7 @@
 
 use Faker\Generator;
 use Modulus\Utility\Seeder;
-use Illuminate\Database\Capsule\Manager as DB;
+use Modulus\Hibernate\Capsule as DB;
 
 class {name} extends Seeder
 {
@@ -12,7 +12,7 @@ class {name} extends Seeder
    * @param Generator $faker
    * @return void
    */
-  protected function seed(Generator $faker)
+  protected function seed(Generator $faker, ?int $index = null)
   {
     DB::table('{table_name}')->insert([
       //
