@@ -12,7 +12,7 @@ class {migration_class}
    */
   public function up()
   {
-    Capsule::schema()->table('{table_name}', function ($table) {
+    Capsule::schema()->table('{table_name}', function (Blueprint $table) {
       $table->string('{migration_name}');
     });
   }
@@ -24,7 +24,7 @@ class {migration_class}
    */
   public function down()
   {
-    Capsule::schema()->table('{table_name}', function ($table) {
+    Capsule::schema()->table('{table_name}', function (Blueprint $table) {
       $table->dropColumn('{migration_name}');
     });
   }
