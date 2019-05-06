@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Jobs;
+
+use Modulus\Hibernate\Queue\ShouldQueue;
+use Modulus\Hibernate\Queue\Dispatchable;
+use Modulus\Hibernate\Queue\QueueInterface;
+
+class {job_name} extends ShouldQueue implements QueueInterface
+{
+  use Dispatchable;
+
+  /**
+   * Create a new job instance
+   *
+   * @return void
+   */
+  public function __construct()
+  {
+    //
+  }
+
+  /**
+   * Execute job
+   *
+   * @return void
+   */
+  public function handle()
+  {
+    //
+  }
+}
