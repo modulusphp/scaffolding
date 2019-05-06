@@ -1,16 +1,16 @@
 <?php
 
-use Modulus\Hibernate\Capsule;
 use Illuminate\Database\Schema\Blueprint;
+use Modulus\Hibernate\{Capsule, Migration};
 
-class {migration_class}
+class {migration_class} extends Migration
 {
   /**
    * Run the migrations.
    *
    * @return void
    */
-  public function up()
+  protected function up()
   {
     Capsule::schema()->table('{table_name}', function (Blueprint $table) {
       $table->string('{migration_name}');
@@ -22,7 +22,7 @@ class {migration_class}
    *
    * @return void
    */
-  public function down()
+  protected function down()
   {
     Capsule::schema()->table('{table_name}', function (Blueprint $table) {
       $table->dropColumn('{migration_name}');

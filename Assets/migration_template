@@ -1,19 +1,19 @@
 <?php
 
-use Modulus\Hibernate\Capsule;
 use Illuminate\Database\Schema\Blueprint;
+use Modulus\Hibernate\{Capsule, Migration};
 
-class {migration_class}
+class {migration_class} extends Migration
 {
   /**
    * Run the migrations.
    *
    * @return void
    */
-  public function up()
+  protected function up()
   {
     Capsule::schema()->create('{migration_name}', function (Blueprint $table) {
-      $table->increments("id");
+      $table->increments('id');
       $table->timestamps();
     });
   }
@@ -23,7 +23,7 @@ class {migration_class}
    *
    * @return void
    */
-  public function down()
+  protected function down()
   {
     Capsule::schema()->dropIfExists('{migration_name}');
   }
