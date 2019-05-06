@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Modulus\Hibernate\{Capsule, Migration};
+
+class Jobs extends Migration
+{
+  /**
+   * Default connection
+   *
+   * @var string
+   */
+  protected $connection = 'queue';
+
+  /**
+   * Run the migrations.
+   *
+   * @return void
+   */
+  protected function up()
+  {
+    Capsule::schema()->create('jobs', function (Blueprint $table) {
+      $table->increments('id');
+      $table->string('queueid')->nullable();
+      $table->longText('queue');
+      $table->integer('processed')->default(0);
+      $table->integer('tries')->default(3);
+      $table->timestamps();
+    });
+  }
+
+  /**
+   * Reverse the migrations.
+   *
+   * @return void
+   */
+  protected function down()
+  {
+    Capsule::schema()->dropIfExists('jobs');
+  }
+}
