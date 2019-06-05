@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Mail{namespace};
+
+use Modulus\Hibernate\Mail\Mailable;
+
+class {mail_name} extends Mailable
+{
+  /**
+   * Handle mailable
+   *
+   * @return void
+   */
+  public function handle()
+  {
+    //
+  }
+
+  /**
+   * Build email
+   *
+   * @return Mailable
+   */
+  public function build()
+  {
+    return $this;
+  }
+}
