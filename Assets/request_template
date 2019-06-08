@@ -2,12 +2,12 @@
 
 namespace App\Http\Requests{namespace};
 
-use Modulus\Http\Request;
+use Modulus\Http\FormRequest;
 
-class {name} extends Request
+class {name} extends FormRequest
 {
   /**
-   * Request rules
+   * Request validation rules
    *
    * @return array
    */
