@@ -1,7 +1,7 @@
 {
   "name": "modulusphp/scaffolding",
   "description": "Scaffolding for Modulus",
-  "version": "1.9.3.7",
+  "version": "1.9.3.8",
   "license": "MIT",
   "type": "package",
   "authors": [
